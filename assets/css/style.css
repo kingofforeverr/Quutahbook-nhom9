@@ -258,67 +258,7 @@ html{
 
 
 }
-/* ... (CSS ban đầu của bạn) ... */
 
-/* Responsive cho các màn hình có chiều rộng nhỏ hơn 800px */
-@media only screen and (max-width: 800px) {
-    #content .content-section {
-      width: 100%;
-      padding: 40px 20px;
-    }
-  
-    #content .member-item {
-      width: 50%; /* Mỗi thành viên chiếm 50% chiều rộng, tức là 2 thành viên mỗi hàng */
-    }
-  
-    .place-item {
-      width: 50%; /* Mỗi sự kiện chiếm 50% chiều rộng, tức là 2 sự kiện mỗi hàng */
-    }
-  }
-  
-  /* Responsive cho các màn hình có chiều rộng nhỏ hơn 600px */
-  @media only screen and (max-width: 600px) {
-    #nav>li {
-      display: block; /* Menu dọc thay vì ngang */
-    }
-  
-    #nav .subnav {
-      position: static; /* Sub menu mở ra dưới li chứ không phải bên cạnh */
-    }
-  
-    #content .member-item,
-    .place-item {
-      width: 100%; /* Mỗi thành viên hoặc sự kiện chiếm toàn bộ chiều rộng */
-    }
-  }
-  
-  /* Responsive cho các màn hình có chiều rộng nhỏ hơn 400px */
-  @media only screen and (max-width: 400px) {
-    #slider .text-content {
-      bottom: 24px; /* Giảm khoảng cách từ phần text tới dưới cùng của slider */
-    }
-  
-    #slider .text-heading {
-      font-size: 20px; /* Giảm kích thước font chữ */
-    }
-  }
-/* ... CSS bạn đã có ... */
 
-@media only screen and (max-width: 600px) {
-    #nav {
-        display: none; /* Ẩn menu gốc */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #000;
-        width: 200px; /* bạn có thể điều chỉnh chiều rộng này */
-    }
 
-    #menu-container:hover #nav {
-        display: block; /* Hiển thị menu khi hover vào menu-container */
-    }
 
-    #menu-toggle {
-        display: block; /* hiển thị nút menu */
-    }
-}
