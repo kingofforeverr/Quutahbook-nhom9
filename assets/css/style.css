@@ -8,7 +8,7 @@
     clear: both;
 }
 .text-white{
-    color: #fff !important;
+    color: #A52A2A!important;
 }
 html{
     scroll-behavior: smooth;
@@ -146,6 +146,7 @@ html{
     font-weight: 500;
     text-align: center;
     letter-spacing: 4px;
+    color: #A52A2A;
 }
 
 #content .section-sub-heading{
@@ -186,7 +187,7 @@ html{
 }
 /* tour section */
 .tour-section{
-    background-color: #000;
+    background-color: 	#FAEBD7;
 }
 .ticket-list{
     background-color: #fff;
