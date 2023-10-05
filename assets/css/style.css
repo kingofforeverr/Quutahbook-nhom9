@@ -24,7 +24,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;   
+    /* overflow: hidden;    */
 
 }
 #nav{
@@ -86,7 +86,7 @@ html{
     line-height: 46px;
 }
 #nav li a{
-    display: inline-block;
+    display: block;
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
@@ -280,8 +280,21 @@ html{
 
 }
 @media (max-width: 740px){
+    #header {
+        overflow: hidden;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+
+    }
+    #header .search-btn{
+        display: none;
+    }
     #nav{
         display: block;
+    }
+    #nav li a{
+        padding: 1px 24px;
     }
     #nav >li {
         display: block;
@@ -290,17 +303,29 @@ html{
     #nav >li:first-child{
         display: inline-block;
     }
-
-    #header .mobile-menu-btn{
-        display: block;
-
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
     }
-    #header .search-btn{
-        display: none;
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
     }
-    
+    #content .member-item,
+    .place-item {
+        width: 100%; /* Mỗi thành viên hoặc sự kiện chiếm toàn bộ chiều rộng */
+    }        
    
 }
+@media only screen and (max-width: 400px) {
+    #slider .text-content {
+      bottom: 24px; /* Giảm khoảng cách từ phần text tới dưới cùng của slider */
+    }
+  
+    #slider .text-heading {
+      font-size: 20px; /* Giảm kích thước font chữ */
+    }
+  }
 
 
 

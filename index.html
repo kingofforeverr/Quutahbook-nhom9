@@ -40,7 +40,7 @@
             <div id="mobile-menu" class="mobile-menu-btn">
                 <i class='menu-icon bx bx-menu'></i>
             </div>
-            
+
             <div class="search-btn">
                 <i class='search-icon bx bx-search'></i>
             </div>
@@ -156,7 +156,15 @@
             var menuItem = menuItems[i];
             
             menuItem.onclick = function (){
-                header.style.height = '46px';
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+
+                if (isParentMenu){
+                    event.preventDefault();
+
+                } else{
+                    header.style.height = '46px';
+
+                }
             }
         }
 
