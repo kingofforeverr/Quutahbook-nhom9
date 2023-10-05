@@ -302,4 +302,23 @@ html{
       font-size: 20px; /* Giảm kích thước font chữ */
     }
   }
-  
+/* ... CSS bạn đã có ... */
+
+@media only screen and (max-width: 600px) {
+    #nav {
+        display: none; /* Ẩn menu gốc */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000;
+        width: 200px; /* bạn có thể điều chỉnh chiều rộng này */
+    }
+
+    #menu-container:hover #nav {
+        display: block; /* Hiển thị menu khi hover vào menu-container */
+    }
+
+    #menu-toggle {
+        display: block; /* hiển thị nút menu */
+    }
+}
