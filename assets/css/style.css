@@ -314,17 +314,17 @@ html{
     }
     #content .member-item,
     .place-item {
-        width: 100%; /* Mỗi thành viên hoặc sự kiện chiếm toàn bộ chiều rộng */
+        width: 100%; 
     }        
    
 }
 @media only screen and (max-width: 400px) {
     #slider .text-content {
-      bottom: 24px; /* Giảm khoảng cách từ phần text tới dưới cùng của slider */
+      bottom: 24px; 
     }
   
     #slider .text-heading {
-      font-size: 20px; /* Giảm kích thước font chữ */
+      font-size: 20px; 
     }
   }
 
